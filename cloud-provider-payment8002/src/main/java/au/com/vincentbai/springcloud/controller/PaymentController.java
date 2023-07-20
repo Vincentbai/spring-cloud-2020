@@ -19,31 +19,37 @@ public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
 
-    // @RequestBody 将请求体中的JSON/XML数据转换成 Payment 对象
-    @PostMapping(value = "/payment/create")
+    @PostMapping("/payment/create")
     public CommonResult create(@RequestBody Payment payment){
-
         int result = paymentService.create(payment);
-        log.info("******** insert result: " + result);
 
         if(result > 0){
-            return new CommonResult(200, "Insert payment successfully! Port: " + serverPort, result);
-        }else{
-            return new CommonResult(444, "Insert payment failed! Port: " + serverPort, null);
+
+            return new CommonResult(200, "Create payment successfully! Port: " + serverPort, result);
+
+        }else {
+
+            return new CommonResult(444, "Create payment failed! Port: " + serverPort, null);
+
         }
+
     }
 
-    @GetMapping(value = "/payment/get/{id}")
+    @GetMapping("/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id){
 
         Payment payment = paymentService.getPaymentById(id);
 
-        log.info("******** get result: " + payment);
+        if( payment != null){
 
-        if(payment != null){
             return new CommonResult(200, "Get payment successfully! Port: " + serverPort, payment);
-        }else{
-            return new CommonResult(444, "Get payment failed, no payment with this ID! Port: " + serverPort, null);
+
+        }else {
+
+            return new CommonResult(444, "Get payment failed! Port: " + serverPort, null);
+
         }
+
     }
+
 }
