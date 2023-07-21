@@ -1,6 +1,0 @@
-CREATE TABLE `springcloud`.`payment` (
-     `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
-     `serial` VARCHAR(200) CHARACTER SET 'utf8' NULL DEFAULT '',
-     PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
