@@ -25,8 +25,9 @@
     <module>cloud-api-commons</module>
     <module>cloud-eureka-server7001</module>
     <module>cloud-eureka-server7002</module>
-      <module>cloud-provider-payment8002</module>
-    <module>cloud-test</module>
+    <module>cloud-provider-payment8002</module>
+    <module>cloud-provider-payment8004</module>
+    <module>cloud-consumer-order-zk80</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
