@@ -30,6 +30,7 @@
     <module>cloud-provider-payment-8006-consul</module>
     <module>cloud-consumer-order-80-zookeeper</module>
     <module>cloud-consumer-order-80-consul</module>
+      <module>cloud-consumer-order-80-open-feign</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
