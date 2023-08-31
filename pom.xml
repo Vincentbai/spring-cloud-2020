@@ -31,6 +31,8 @@
     <module>cloud-consumer-order-80-zookeeper</module>
     <module>cloud-consumer-order-80-consul</module>
       <module>cloud-consumer-order-80-open-feign</module>
+      <module>cloud-provider-payment-8001-eureka-hystrix</module>
+    <module>cloud-consumer-order-80-open-feign-hystrix</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
