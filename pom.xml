@@ -33,6 +33,7 @@
       <module>cloud-consumer-order-80-open-feign</module>
       <module>cloud-provider-payment-8001-eureka-hystrix</module>
     <module>cloud-consumer-order-80-open-feign-hystrix</module>
+      <module>cloud-consumer-hystix-dashboard9001</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
