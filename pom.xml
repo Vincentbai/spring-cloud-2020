@@ -35,6 +35,8 @@
     <module>cloud-consumer-order-80-open-feign-hystrix</module>
       <module>cloud-consumer-hystix-dashboard9001</module>
       <module>cloud-gateway-9527</module>
+    <module>alibaba-provider-payment-9001</module>
+    <module>alibaba-provider-payment-9002</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
