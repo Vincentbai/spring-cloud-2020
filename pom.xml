@@ -40,6 +40,7 @@
       <module>alibaba-consumer-nacos-order-83</module>
       <module>alibaba-config-nacos-client-3377</module>
     <module>alibaba-config-nacos-client-3377</module>
+      <module>alibaba-sentinel-service-8401</module>
   </modules>
 
   <!-- 统一 jar 包版本号 -->
